@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript">var submitted=false;</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="landing is-preload">
@@ -22,10 +23,10 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
+											<!-- <li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li> -->
+											<li><a href="#cta">Sign Up</a></li>
+											<li><a href="http://50.17.126.196/">Log In</a></li>
 										</ul>
 									</div>
 								</li>
@@ -56,13 +57,9 @@
 									trabajando antes, durante y luego de la adopción tecnológica de RPA.</p>
 							</header>
 							<ul class="icons major">
-								<!-- No se porque me queda un subrallado feo cuando agrego los links revisar -->
-								<!-- <li><a href="#significado" class="more scrolly"><span class="icon fa-gem major style1"><span class="label">Significado</span></span></a></li>
-								<li><a href="#hacemos" class="more scrolly"><span class="icon fa-heart major style2"><span class="label">hacemos</span></span></a></li>
-								<li><a href="#somos" class="more scrolly"><span class="icon solid fa-code major style3"><span class="label">somos</span></span></a></li> -->
-								<li><span class="icon fa-gem major style1"><span class="label">Significado</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">hacemos</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">somos</span></span></li>
+								<li><a href="#significado" class="icon more scrolly"><span class="icon solid fa-drafting-compass major style1"><span class="label">Significado</span></span></a></li>
+								<li><a href="#hacemos" class="icon more scrolly"><span class="icon solid fa-code major style2"><span class="label">Que hacemos</span></span></a></li>
+								<li><a href="#somos" class="icon more scrolly"><span class="icon solid fa-handshake major style3"><span class="label">Que somos</span></span></a></li>
 							</ul>
 						</div>
 					</section>
@@ -94,8 +91,8 @@
 						<div class="inner">
 							<header class="major">
 								<h2>Nuestras capacidades</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<!-- <p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
+								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p> -->
 							</header>
 							<ul class="features">
 								<li class="icon fa-paper-plane">
@@ -110,12 +107,13 @@
 									<h3>Integración</h3>
 									<p>Desarrollo e implementación de herramientas de integración de procesos</p>
 								</li>
-								<li class="icon solid fa-headphones-alt">
-									<h3>Automatización</h3>
+								<li class="icon solid fa-expand">
+										<h3>Automatización</h3>
 									<p>Desarrollo e implementación de herramientas de automatización de procesos</p>
 								</li>
-								<li class="icon fa-heart">
-									<h3>SaaS</h3>
+								<li class="icon solid fa-cloud-download-alt">
+								<!-- <li class="icon fa-heart"> -->
+										<h3>SaaS & ON-PREM</h3>
 									<p>Hosting y mantenimiento de soluciones</p>
 								</li>
 								<li>
@@ -211,9 +209,7 @@
 						</form>
 						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 					</div>
-
 					</section>
-
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -243,7 +239,6 @@
 
 			<!-- Form script -->
 			<!-- <script src="assets/js/jquery.min.js"></script> -->
-			<script type="text/javascript">var submitted=false;</script>
 			<script type="text/javascript">
 				$('#gform').on('submit', function(e) {
 					$('#gform *').fadeOut(2000);

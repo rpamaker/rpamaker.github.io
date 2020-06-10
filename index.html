@@ -22,8 +22,8 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<!-- <li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li> -->
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
 											<li><a href="#">Sign Up</a></li>
 											<li><a href="#">Log In</a></li>
 										</ul>
@@ -51,10 +51,9 @@
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Arcu aliquet vel lobortis ata nisl<br />
-								eget augue amet aliquet nisl cep donec</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h2>La capacitación continua es clave para la continuidad y crecimiento del negocio, tanto para recursos humanos como tecnológicos</h2>
+								<p>RPA Maker reúne la excelencia y enfoque corporativo con la vocación de docencia,<br />
+									trabajando antes, durante y luego de la adopción tecnológica de RPA.</p>
 							</header>
 							<ul class="icons major">
 								<!-- No se porque me queda un subrallado feo cuando agrego los links revisar -->
@@ -130,28 +129,104 @@
 				<!-- CTA -->
 					<section id="cta" class="wrapper style4">
 						<div class="inner">
-							<header>
+							<!-- <header>
 								<h2>Arcue ut vel commodo</h2>
 								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
 							</header>
 							<ul class="actions stacked">
 								<li><a href="#" class="button fit primary">Activate</a></li>
 								<li><a href="#" class="button fit">Learn More</a></li>
-							</ul>
-						</div>
+							</ul> -->
+					<!-- </section> -->
+
+
+						<!--
+							Reference: https://github.com/toperkin/staticFormEmails/blob/master/README.md
+
+							Original link: https://docs.google.com/forms/d/e/1FAIpQLSfz0Ym6wvouOmLsDyIPx-0NlZvzERdYHUOPjt5k1DjZzETS0Q/viewform?usp=pp_url&entry.247680823=ejemploNombre&entry.790399439=ejemploEmail&entry.1965605240=ejemploMensaje							
+							action: https://docs.google.com/forms/d/e/1FAIpQLSfz0Ym6wvouOmLsDyIPx-0NlZvzERdYHUOPjt5k1DjZzETS0Q/formResponse?					
+							parameters: viewform?usp=pp_url&entry.247680823=ejemploNombre&entry.790399439=ejemploEmail&entry.1965605240=ejemploMensaje
+
+							Code Example: 
+							<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/14lh6MIQOy9j3jWzEl7BysxEe4p9OoU9WN3tytbQjj1I/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+								First name:<br>
+								<input type="text" name="entry.810989529" id="entry.810989529"><br>
+								Last name:<br>
+								<input type="text" name="entry.463380756" id="entry.463380756">
+								<input type="submit" value="Submit">
+							</form>
+							<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+						-->
+
+					<!-- <section> -->
+						<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfz0Ym6wvouOmLsDyIPx-0NlZvzERdYHUOPjt5k1DjZzETS0Q/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+						<!-- <form method="post" action="#" > -->
+								<h4>Contactenos</h4>
+							<div class="row gtr-uniform">
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="entry.247680823" id="entry.247680823" value="" placeholder="Nombre" />
+								</div>
+								<div class="col-6 col-12-xsmall">
+									<input type="email" name="entry.790399439" id="entry.790399439" value="" placeholder="Email" />
+								</div>
+								<!-- <div class="col-12">
+									<select name="demo-category" id="demo-category">
+										<option value="">- Category -</option>
+										<option value="1">Manufacturing</option>
+										<option value="1">Shipping</option>
+										<option value="1">Administration</option>
+										<option value="1">Human Resources</option>
+									</select>
+								</div> -->
+								<!-- <div class="col-4 col-12-small">
+									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+									<label for="demo-priority-low">Low</label>
+								</div>
+								<div class="col-4 col-12-small">
+									<input type="radio" id="demo-priority-normal" name="demo-priority">
+									<label for="demo-priority-normal">Normal</label>
+								</div>
+								<div class="col-4 col-12-small">
+									<input type="radio" id="demo-priority-high" name="demo-priority">
+									<label for="demo-priority-high">High</label>
+								</div> -->
+								<!-- <div class="col-6 col-12-small">
+									<input type="checkbox" id="demo-copy" name="demo-copy">
+									<label for="demo-copy">Enviarme copia</label>
+								</div>
+								<div class="col-6 col-12-small">
+									<input type="checkbox" id="demo-human" name="demo-human" checked>
+									<label for="demo-human">No soy robot</label>
+								</div> -->
+								<div class="col-12">
+									<textarea name="entry.1965605240" id="entry.1965605240" placeholder="Ingresa el mensaje" rows="6"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Enviar mensaje" class="primary" /></li>
+										<!-- <li><input type="reset" value="Borrar mensaje" /></li> -->
+									</ul>
+								</div>
+							</div>
+						</form>
+						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+					</div>
+
 					</section>
+
 
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+							<!-- <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+							<li><a href="https://wa.me/59899637686?text=Hola%20me%20interesa%20saber%20más%20sobre%20RPAMaker%20" class="icon brands fa-whatsapp"><span class="label">Dribbble</span></a></li>
+							<li><a href="mailto:daniel@rpamaker.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; RPAMaker</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; RPAMaker</li><li>+ 598 9963 7686</li>
 						</ul>
 					</footer>
 
@@ -165,6 +240,16 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- Form script -->
+			<!-- <script src="assets/js/jquery.min.js"></script> -->
+			<script type="text/javascript">var submitted=false;</script>
+			<script type="text/javascript">
+				$('#gform').on('submit', function(e) {
+					$('#gform *').fadeOut(2000);
+					$('#gform').prepend('Su mensaje ha sido enviado. En caso de urgencias escribir por WhatsApp al + 598 9963 7686');
+				});
+			</script>
 
 	</body>
 </html>
